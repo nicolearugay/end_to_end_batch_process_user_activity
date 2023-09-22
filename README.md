@@ -69,7 +69,7 @@ In this phase, we set up a Snowflake environment, configure Snowflake for Spark 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i. Databricks provides a Snowflake connector in the Databricks Runtime to support reading and writing data from Snowflake. Use the Databricks secret manager to set Snowflake user login name and password. 
 
 6. Load Transformed Data  
-    a. Use Spark in the Databricks notebook to load the transformed data from Databricks into Snowflake.
+    a. Use Spark in the Databricks notebook to load the transformed data from Databricks into Snowflake. See 'batch_process_databricks.ipynb". 
 
 ## Phase 4: Workflow Automation
 
