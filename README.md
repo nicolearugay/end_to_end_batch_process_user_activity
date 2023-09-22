@@ -28,7 +28,7 @@ Docker
 Github     
 
 ## Architecture Diagram 
-<img src="architecture.png" alt="Alt text" width="850"/>
+<img src="/screenshots/architecture.png" alt="Alt text" width="850"/>
 
 ## Project Steps 
 ## Phase 1: Data Ingestion 
@@ -82,8 +82,8 @@ We are automating the batch process seen in the last phase using Airflow. This i
     c.Configure Databricks jobs with Airflow to ensure successful DAG run.   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i. Create a job in Databricks attaching the respective notebook. Use the job ID in the DAG script. Use the Databricks personal access token when configuring a Databricks connection to Airflow - I used the web UI for this instance.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii. See successful runs in the Airflow web UI or Databricks.   
-<img src="databricks_run.png" alt="Alt text" width="750"/>  
-<img src="airflow_run.png" alt="Alt text" width="750"/>  
+<img src="/screenshots/databricks_run.png" alt="Alt text" width="750"/>  
+<img src="/screenshots/airflow_run.png" alt="Alt text" width="750"/>  
 
 ## Phase 5: CI/CD Integration
 
@@ -99,4 +99,4 @@ We create a CI/CD pipeline and run it in a containerized Jenkins set up. For eas
     d. Run the pipeline.   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i. See below a sample output of a successful build.  
 
-<img src="jenkins_output.png" alt="Alt text" width="350"/>  
+<img src="/screenshots/jenkins_output.png" alt="Alt text" width="350"/>  
