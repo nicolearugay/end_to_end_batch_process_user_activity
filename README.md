@@ -41,7 +41,7 @@ In this phase, we are creating an AWS S3 bucket where raw user activity data wil
     d. Install AWS CLI and configure an AWS profile.     
 
 2. Data Generation  
-    a. Write a Python script that simulates user behavior on an e-commerce site. See python script ‘data_generator.py’.  
+    a. Write a Python script that simulates user behavior on an e-commerce site. See python script ‘data_generator.ipynb’.  
     b. Upload the generated JSON file into the S3 bucket.  
 
 ## Phase 2: Batch Processing with Spark and Databricks
