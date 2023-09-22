@@ -79,7 +79,7 @@ We are automating the batch process seen in the last phase using Airflow. This i
     a. Set up Airflow in Docker and install the Databricks provider packages.   
     b. Write an Airflow DAG that orchestrates the batch process. See my dag in ‘batch_processing_dag.py’.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i. I used the DatabricksRunNowOperator which requires an existing Databricks job.   
-    c.Configure Databricks jobs with Airflow to ensure successful DAG run.   
+    c. Configure Databricks jobs with Airflow to ensure successful DAG run.   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i. Create a job in Databricks attaching the respective notebook. Use the job ID in the DAG script. Use the Databricks personal access token when configuring a Databricks connection to Airflow - I used the web UI for this instance.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii. See successful runs in the Airflow web UI or Databricks.   
 <img src="/screenshots/databricks_run.png" alt="Alt text" width="750"/>  
