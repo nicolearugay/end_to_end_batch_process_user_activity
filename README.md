@@ -92,8 +92,7 @@ We create a CI/CD pipeline and run it in a containerized Jenkins set up. For eas
 8. Jenkins Setup   
     a. Install Jenkins.   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i. In my project, I also ran it in Docker.   
-    b. Create a Jenkinsfile.   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i. See ‘Jenkinsfile’.   
+    b. Create a Jenkinsfile.    
     c. Create a new job in Jenkins and configure using the pipeline script from SCM option.   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i. Add Github credentials using the secret key option in Jenkins.   
     d. Run the pipeline.   
