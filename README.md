@@ -81,9 +81,7 @@ We are automating the batch process seen in the last phase using Airflow. This i
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i. I used the DatabricksRunNowOperator which requires an existing Databricks job.   
     c. Configure Databricks jobs with Airflow to ensure successful DAG run.   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i. Create a job in Databricks attaching the respective notebook. Use the job ID in the DAG script. Use the Databricks personal access token when configuring a Databricks connection to Airflow - I used the web UI for this instance.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii. See successful runs in the Airflow web UI or Databricks.   
-<img src="/screenshots/databricks_run.png" alt="Alt text" width="750"/>  
-<img src="/screenshots/airflow_run.png" alt="Alt text" width="750"/>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 ## Phase 5: CI/CD Integration
 
@@ -96,6 +94,4 @@ We create a CI/CD pipeline and run it in a containerized Jenkins set up. For eas
     c. Create a new job in Jenkins and configure using the pipeline script from SCM option.   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i. Add Github credentials using the secret key option in Jenkins.   
     d. Run the pipeline.   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i. See below a sample output of a successful build.  
-
-<img src="/screenshots/jenkins_output.png" alt="Alt text" width="350"/>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
